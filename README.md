@@ -83,10 +83,56 @@ Unlike traditional neural networks with fixed architectures, NEAT starts with si
 
 ---
 
-## Installation
-
-Clone the repository:
+## Project Structure
 
 ```bash
-git clone https://github.com/manvendra1864/neuro-evolution-flappybird-agent.git
+├── flappy_bird.py
+├── config-feedforward.txt
+├── visualize.py
+├── evolution_visualizer.py
+├── imgs/
+├── requirements.txt
+└── README.md
 ```
+
+---
+
+## Training Results
+
+The AI improves rapidly after a few generations.
+
+Observed improvements during training:
+
+* early generations fail quickly
+* later generations survive longer
+* evolved agents learn accurate jump timing
+* stable gameplay achieved after multiple generations
+
+---
+
+## Future Improvements
+
+* parallel training optimization
+* advanced visualization tools
+* hybrid NEAT + reinforcement learning
+* transfer learning to other games
+* better fitness optimization
+
+---
+
+## Learning Outcome
+
+This project helped in understanding:
+
+* evolutionary algorithms
+* neural networks
+* game AI development
+* neuroevolution
+* fitness-based optimization
+* autonomous decision-making systems
+
+---
+
+## License
+
+This project is created for educational and research purposes.
