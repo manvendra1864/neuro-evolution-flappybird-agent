@@ -1,23 +1,92 @@
-[![Run on Repl.it](https://repl.it/badge/github/techwithtim/NEAT-Flappy-Bird)](https://repl.it/github/techwithtim/NEAT-Flappy-Bird)
-# NEAT-Flappy-Bird
-An AI that plays flappy bird! Using the NEAT python module.
+# Neuro-Evolution FlappyBird Agent
 
-# Instructions
-Simply run *flappy_bird.py* and watch an AI start training itself to play the game of flappy bird!
+A self-learning AI agent that learns to play Flappy Bird using the **NEAT (NeuroEvolution of Augmenting Topologies)** algorithm.
+Instead of manually programming the bird’s behavior, the AI learns through evolution and repeated gameplay simulations.
 
-# Video Tutorial
+---
 
-You can view on the details of this project here: https://www.youtube.com/watch?v=OGHA-elMrxI
+## Overview
 
-# 💻 Launch Your Software Development Career Today!  
+This project demonstrates how evolutionary artificial intelligence can be used to train an autonomous game-playing agent.
 
-🎓 **No degree? No problem!** My program equips you with everything you need to break into tech and land an entry-level software development role.  
+The AI observes the game environment, makes decisions in real time, and gradually improves over generations using the NEAT algorithm.
 
-🚀 **Why Join?**  
-- 💼 **$70k+ starting salary potential**  
-- 🕐 **Self-paced:** Complete on your own time  
-- 🤑 **Affordable:** Low risk compared to expensive bootcamps or degrees
-- 🎯 **45,000+ job openings** in the market  
+The project was built using Python, Pygame, and the `neat-python` library.
 
-👉 **[Start your journey today!](https://techwithtim.net/dev)**  
-No experience needed—just your determination. Future-proof your career and unlock six-figure potential like many of our students have!  
+---
+
+## Features
+
+* Self-learning Flappy Bird AI
+* NEAT-based neural network evolution
+* Real-time game simulation using Pygame
+* Automatic network topology evolution
+* Fitness-based training system
+* Performance tracking and logging
+* Evolution visualization graphs
+
+---
+
+## How It Works
+
+The AI bird receives information from the game environment, including:
+
+* Bird vertical position
+* Distance from the top pipe
+* Distance from the bottom pipe
+
+Using these inputs, the neural network decides:
+
+* Jump
+* or stay idle
+
+Each AI bird is rewarded based on:
+
+* survival time
+* pipes passed
+* avoiding collisions
+
+The best-performing AI agents are selected and evolved into the next generation using mutation and crossover operations.
+
+Over time, the AI learns the optimal jumping behavior automatically.
+
+---
+
+## Algorithm Used — NEAT
+
+NEAT (NeuroEvolution of Augmenting Topologies) is an evolutionary algorithm that evolves both:
+
+* neural network weights
+* neural network structure
+
+Unlike traditional neural networks with fixed architectures, NEAT starts with simple networks and gradually increases complexity through evolution.
+
+### NEAT Process
+
+1. Create a population of AI agents
+2. Let each agent play the game
+3. Calculate fitness scores
+4. Select best-performing agents
+5. Apply mutation and crossover
+6. Generate new population
+7. Repeat for multiple generations
+
+---
+
+## Technologies Used
+
+* Python
+* Pygame
+* neat-python
+* NumPy
+* Matplotlib
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/manvendra1864/neuro-evolution-flappybird-agent.git
+```
